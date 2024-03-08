@@ -33,11 +33,11 @@ import {
     Steps,
     Drawer,
     DatePicker
-} from "bitshares-ui-style-guide";
+} from "graphene-ui-style-guide";
 
 import PropTypes from "prop-types";
 
-import logo from "../../assets/images/bitshares-text-logo.png";
+import logo from "../../assets/images/graphene-text-logo.png";
 
 /* * * * * * * UPLOAD * * * * * * */
 
@@ -535,16 +535,16 @@ class Basic extends React.Component {
                 <Row>
                     <Col span={6}>
                         <Select placeholder={"Select asset"} showSearch optionFilterProp="children" style={{width: "100%"}} filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}>
-                            <Select.Option value={"Bitshares"}>Bitshares</Select.Option>
                             <Select.Option value={"Bitcoin"}>Bitcoin</Select.Option>
+                            <Select.Option value={"Ethereum"}>Ethereum</Select.Option>
                             <Select.Option disabled value={"BitGold"}>BitGold</Select.Option>
                             <Select.Option value={"Bitcoin Cash"}>Bitcoin Cash</Select.Option>
                         </Select>
                     </Col>
                     <Col span={6} offset={1}>
-                        <Select defaultValue={"Bitshares"} showSearch optionFilterProp="children" style={{width: "100%"}} filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}>
-                            <Select.Option value={"Bitshares"}>Bitshares</Select.Option>
+                        <Select defaultValue={"Bitcoin"} showSearch optionFilterProp="children" style={{width: "100%"}} filterOption={(input, option) => option.props.children.toLowerCase().indexOf(input.toLowerCase()) >= 0}>
                             <Select.Option value={"Bitcoin"}>Bitcoin</Select.Option>
+                            <Select.Option value={"Ethereum"}>Ethereum</Select.Option>
                             <Select.Option disabled value={"BitGold"}>BitGold</Select.Option>
                             <Select.Option value={"Bitcoin Cash"}>Bitcoin Cash</Select.Option>
                         </Select>
@@ -577,17 +577,17 @@ class Basic extends React.Component {
                 <Row>
                     <Col span={11}>
                         <Form.Item label="Which do you invest in?">
-                            <Checkbox checked>Bitshares</Checkbox>
                             <Checkbox>Bitcoin</Checkbox>
+                            <Checkbox checked>Ethereum</Checkbox>
                             <Checkbox>Bitcoin Cash</Checkbox>
                             <Checkbox disabled={true}>Disabled</Checkbox>
                         </Form.Item>
                     </Col>
                     <Col span={11} offset={2}>
                         <Form.Item label="Choose your favourite">
-                            <Radio.Group defaultValue="bitshares">
-                                <Radio value={"bitshares"}>Bitshares</Radio>
+                            <Radio.Group defaultValue="bitcoin">
                                 <Radio value={"bitcoin"}>Bitcoin</Radio>
+                                <Radio value={"ethereum"}>Ethereum</Radio>
                                 <Radio value={"bitcoin cash"}>Bitcoin Cash</Radio>
                                 <Radio value={"bitcoin cash"} disabled={true}>Disabled</Radio>
                             </Radio.Group>
@@ -778,17 +778,17 @@ class Basic extends React.Component {
                 <Collapse defaultActiveKey={["1"]}>
                     <Collapse.Panel header="This is panel header 1" key="1">
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 2" key="2" >
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 3" key="3" disabled>
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                 </Collapse>
@@ -798,17 +798,17 @@ class Basic extends React.Component {
                 <Collapse defaultActiveKey={["1"]} bordered={false}>
                     <Collapse.Panel header="This is panel header 1" key="1">
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 2" key="2">
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 3" key="3" disabled>
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                 </Collapse>
@@ -818,17 +818,17 @@ class Basic extends React.Component {
                 <Collapse defaultActiveKey={["1"]}>
                     <Collapse.Panel header="This is panel header 1" key="1" showArrow={false}>
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 2" key="2" showArrow={false}>
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                     <Collapse.Panel header="This is panel header 3" key="3" disabled showArrow={false}>
                         <p>
-                            BitShares provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
+                            Graphene provides a high-performance decentralized exchange, with all the features you would expect in a trading platform. It can handle the trading volume of the NASDAQ, while settling orders the second you submit them. With this kind of performance on a decentralized exchange, who needs risky centralized exchanges?
                         </p>
                     </Collapse.Panel>
                 </Collapse>

@@ -1,11 +1,9 @@
 {
-  "name": "bitshares-ui-style-guide",
-  "version": "6.0.0",
+  "name": "graphene-ui-style-guide",
+  "version": "1.0.0",
   "main": "dist/main.js",
   "license": "MIT",
-  "description": "Bitshares UI Style Guide ",
-  "repository": "https://github.com/bitshares/bitshares-ui-style-guide",
-  "author": "Leroy Jethro Gibbs",
+  "description": "Graphene UI Style Guide ",
   "dependencies": {
     "antd": "^3.26.20",
     "normalize.css": "^8.0.1",
@@ -44,12 +42,12 @@
   },
   "scripts": {
     "theme-compile": "concurrently \"yarn run theme-compile:dark\" \"yarn run theme-compile:light\" \"yarn run theme-compile:midnight\"",
-    "theme-compile:dark": "lessc -js app/bitshares-ui-style-guide/styles/dark/dark-theme.less > app/bitshares-ui-style-guide/styles/dark/dark-theme.css",
-    "theme-compile:light": "lessc -js app/bitshares-ui-style-guide/styles/light/light-theme.less > app/bitshares-ui-style-guide/styles/light/light-theme.css",
-    "theme-compile:midnight": "lessc -js app/bitshares-ui-style-guide/styles/midnight/midnight-theme.less > app/bitshares-ui-style-guide/styles/midnight/midnight-theme.css",
-    "theme-watch:dark": "./node_modules/less-watch-cli/index.js app/bitshares-ui-style-guide/styles/dark/dark-theme.less app/bitshares-ui-style-guide/styles/dark/dark-theme.css",
-    "theme-watch:light": "./node_modules/less-watch-cli/index.js app/bitshares-ui-style-guide/styles/light/light-theme.less app/bitshares-ui-style-guide/styles/light/light-theme.css",
-    "theme-watch:midnight": "./node_modules/less-watch-cli/index.js app/bitshares-ui-style-guide/styles/midnight/midnight-theme.less app/bitshares-ui-style-guide/styles/midnight/midnight-theme.css",
+    "theme-compile:dark": "lessc -js app/graphene-ui-style-guide/styles/dark/dark-theme.less > app/graphene-ui-style-guide/styles/dark/dark-theme.css",
+    "theme-compile:light": "lessc -js app/graphene-ui-style-guide/styles/light/light-theme.less > app/graphene-ui-style-guide/styles/light/light-theme.css",
+    "theme-compile:midnight": "lessc -js app/graphene-ui-style-guide/styles/midnight/midnight-theme.less > app/graphene-ui-style-guide/styles/midnight/midnight-theme.css",
+    "theme-watch:dark": "./node_modules/less-watch-cli/index.js app/graphene-ui-style-guide/styles/dark/dark-theme.less app/graphene-ui-style-guide/styles/dark/dark-theme.css",
+    "theme-watch:light": "./node_modules/less-watch-cli/index.js app/graphene-ui-style-guide/styles/light/light-theme.less app/graphene-ui-style-guide/styles/light/light-theme.css",
+    "theme-watch:midnight": "./node_modules/less-watch-cli/index.js app/graphene-ui-style-guide/styles/midnight/midnight-theme.less app/graphene-ui-style-guide/styles/midnight/midnight-theme.css",
     "theme-watch": "concurrently --kill-others \"yarn run theme-watch:dark\" \"yarn run theme-watch:light\" \"yarn run theme-watch:midnight\"",
     "clean:dist": "rimraf dist",
     "clean:docs": "rimraf docs",
@@ -57,6 +55,7 @@
     "start": "concurrently --kill-others \"yarn run theme-watch\" \"webpack-dev-server --config webpack.dev.config.js\"",
     "build:dist": "webpack --config webpack.prod.config.js",
     "build:docs": "webpack --config webpack.docs.config.js",
-    "build": "yarn run clean && yarn run build:dist && yarn run build:docs"
+    "build": "yarn run clean && yarn run build:dist && yarn run build:docs",
+    "prepare": "yarn run build"
   }
 }

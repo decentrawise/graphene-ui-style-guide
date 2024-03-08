@@ -1,9 +1,9 @@
 import React from "react";
 
-import bg from "assets/images/bitshares-screenshot-bg.png";
-import lightBg from "assets/images/bitshares-screenshot-bg-light.png";
+import bg from "assets/images/graphene-screenshot-bg.png";
+import lightBg from "assets/images/graphene-screenshot-bg-light.png";
 
-import {Modal as Mdl, BodyClassName} from "bitshares-ui-style-guide";
+import {Modal as Mdl, BodyClassName} from "graphene-ui-style-guide";
 
 class Modal extends React.Component {
 

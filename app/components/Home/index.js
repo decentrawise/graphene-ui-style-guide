@@ -1,9 +1,9 @@
 import React from "react";
 import {Link} from "react-router-dom";
-import {BodyClassName} from "bitshares-ui-style-guide";
+import {BodyClassName} from "graphene-ui-style-guide";
 import {Button} from "antd";
 
-import textLogo from "assets/images/bitshares-text-logo.png";
+import textLogo from "assets/images/graphene-text-logo.png";
 import "./styles.less";
 
 class Home extends React.Component {

@@ -1,6 +1,6 @@
 import React from "react";
 import Basic from "../Basic/index";
-import {BodyClassName} from "bitshares-ui-style-guide";
+import {BodyClassName} from "graphene-ui-style-guide";
 
 import "./styles.less";
 

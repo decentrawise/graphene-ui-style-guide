@@ -1,6 +1,6 @@
-# Bitshares-UI Style-Guide
+# Graphene-UI Style-Guide
 
-Welcome to bitshares ui style-guide
+Welcome to Graphene UI style-guide
 
 ### Quick Setup Guide
 
@@ -10,23 +10,23 @@ Welcome to bitshares ui style-guide
 - npm v6+
 - yarn (if you wish:)
 
-#### Setup localy
+#### Setup locally
 
-- `git clone https://github.com/bitshares/bitshares-ui-style-guide.git`
+- `git clone https://github.com/decentrawise/graphene-ui-style-guide.git`
 
-- `cd bitshares-ui-style-guide`
+- `cd graphene-ui-style-guide`
 
-- `npm install` - install dependencies
+- `yarn` - install dependencies
 
-- `npm start` - start project for local development
+- `yarn start` - start project for local development
 
 #### Make build
 
-- `npm run build` - build project for all purposes (docs & dist)
+- `yarn run build` - build project for all purposes (docs & dist)
 
-- `npm run build:docs` - rebuild demo page for github
+- `yarn run build:docs` - rebuild demo page for github
 
-- `npm run build:dist` - rebuild library source
+- `yarn run build:dist` - rebuild library source
 
 ### [Ant Design v3](https://ant.design/docs/react/introduce) components support
 

@@ -7,7 +7,7 @@ const config = {
     mode: "production",
     
     entry: [
-        "./bitshares-ui-style-guide/index.js"
+        "./graphene-ui-style-guide/index.js"
     ],
     
     context: path.resolve(__dirname, "app"),
@@ -50,7 +50,7 @@ const config = {
         filename      : "[name].js",
         path          : path.resolve(__dirname, "dist"),
         publicPath    : "",
-        library       : "bitshares",
+        library       : "graphene",
         libraryTarget : "umd",
         umdNamedDefine: true
     },
